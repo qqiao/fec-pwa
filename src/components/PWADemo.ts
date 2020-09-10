@@ -71,12 +71,12 @@ class PWADemo extends connect(store)(LitElement) {
   protected render(): TemplateResult {
     return html` <mwc-drawer id="drawer" type="modal" hasHeader>
       <span slot="title">
-        <img src="/assets/Progressive_Web_Apps_Logo.svg" id="pwaLogo">
+        <img src="./assets/Progressive_Web_Apps_Logo.svg" id="pwaLogo">
       </span>
       <ol id="navigation-links">
-        <li><a href="/history">History</a></li>
-        <li><a href="/intro">Introduction</a></li>
-        <li><a href="/installable">Installable</a></li>
+        <li><a href="./history">History</a></li>
+        <li><a href="./intro">Introduction</a></li>
+        <li><a href="./installable">Installable</a></li>
       </ol>
       <div slot="appContent">
         <mwc-top-app-bar>

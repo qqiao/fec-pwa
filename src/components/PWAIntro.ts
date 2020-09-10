@@ -55,7 +55,7 @@ class PWAIntro extends SlideShowElement {
       </div>
       <div class="paragraph">
         With PWA, you get the best of both worlds:<br />
-        <img src="/assets/capabilities-reach.svg" style="width: 70%" />
+        <img src="./assets/capabilities-reach.svg" style="width: 70%" />
       </div>`;
   }
 }

@@ -53,11 +53,11 @@ class PWAHistory extends SlideShowElement {
           <li>Can you remember the URL of 上海交警?</li>
           <li>
             Have you seen this before?<br />
-            <img src="assets/broken_page.png" />
+            <img src="./assets/broken_page.png" />
             <li></li>
             <li>
               The great Amazon used to look like this:<br />
-              <img src="assets/old_amazon.jpg" />
+              <img src="./assets/old_amazon.jpg" />
             </li>
           </li>
         </ul>
@@ -67,7 +67,7 @@ class PWAHistory extends SlideShowElement {
       </div>
       <div class="paragraph">
         GMail showed the world that you can do powerful things in a browser:<br />
-        <img src="/assets/gmailold.png" />
+        <img src="./assets/gmailold.png" />
       </div>
       <div class="paragraph">
         And the world started to realize that you can do much more just in a
