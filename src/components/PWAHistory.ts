@@ -76,7 +76,16 @@ class PWAHistory extends SlideShowElement {
         things (Citi Velocity), be a 杠精 (贴吧)...
       </div>
       <div class="paragraph">
-        Then the platform became our bottleneck...
+        Then the browsers became our bottleneck... Fond memories of Internet
+        Explorer anyone?
+      </div>
+      <div class="paragraph">
+        Then there were brave souls trying to solve the problem by modifying
+        a browser: OpenFin, Electron, Finsemble and our very own ICGDesktop...
+      </div>
+      <div class="paragraph bottom-nav">
+        <div></div>
+        <a href="./intro" class="nav-link">Introducing PWA</a>
       </div>`;
   }
 }

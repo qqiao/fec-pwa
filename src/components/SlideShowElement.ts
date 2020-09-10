@@ -19,13 +19,23 @@ abstract class SlideShowElement extends LitElement {
 
 const sharedStyles = css`
   :host div.paragraph {
-    opacity: 1;
-    margin: 1em 0;
+    opacity: 0;
+    margin: 1.5em 0;
   }
 
   :host div.paragraph.shown {
     opacity: 1;
     transition: opacity 1s linear;
+  }
+
+  :host div.bottom-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  :host a.nav-link {
+    font-weight: bold;
   }
 `;
 

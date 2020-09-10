@@ -84,23 +84,28 @@ class PWADemo extends connect(store)(LitElement) {
             icon="menu"
             slot="navigationIcon"
             @click="${() => {
-        if (!this.drawer) return;
-        this.drawer.open = !this.drawer.open;
-      }}"
+              if (!this.drawer) return;
+              this.drawer.open = !this.drawer.open;
+            }}"
           ></mwc-icon-button>
-          <div slot="title">PWA （国庆献礼FEC重磅推出，2020首次活动）</div>
-          <mwc-icon-button
+          <div slot="title">PWA （FEC重磅推出，2020首次活动，国庆献礼不容错过）</div>
+          <!--<mwc-icon-button
             icon="file_download"
             slot="actionItems"
           ></mwc-icon-button>
           <mwc-icon-button icon="print" slot="actionItems"></mwc-icon-button>
           <mwc-icon-button icon="favorite" slot="actionItems"></mwc-icon-button
-        ></mwc-top-app-bar>
+        >
+        -->
+        </mwc-top-app-bar>
         <div id="pageContainer">
-        <pwa-history class="page" ?active=${'history' === this._page
-      }></pwa-history>
-        <pwa-intro class="page" ?active=${'intro' === this._page}></pwa-intro>
-        <pwa-installable class="page" ?active=${'installable' === this._page}></pwa-installable>
+          <pwa-history class="page" ?active=${
+            'history' === this._page
+          }></pwa-history>
+          <pwa-intro class="page" ?active=${'intro' === this._page}></pwa-intro>
+          <pwa-installable class="page" ?active=${
+            'installable' === this._page
+          }></pwa-installable>
         <div>
       </div>
     </mwc-drawer>`;

@@ -7,24 +7,48 @@ class PWAInstallable extends SlideShowElement {
 
   protected render(): TemplateResult {
     return html`<h2>Installable PWAs</h2>
-    <div class="paragraph">
-      On capable browsers, users will be prompted for installation of a PWA if:
-      <ul>
-        <li>The web app is not already installed</li>
-        <li>Meets a user engagement heuristic</li>
-        <li>Be served over HTTPS</li>
-        <li>Includes a Web App Manifest that includes:
-          <ul>
-            <li>short_name or name</li>
-            <li>icons - must include a 192px and a 512px icon</li>
-            <li>start_url</li>
-            <li>display - must be one of fullscreen, standalone,
-              or minimal-ui</li>
-            <li>Note: prefer_related_applications must not be present, or be
-              false</li>
-          </ul>
-        <li>Registers a service worker with a functional fetch handler</li>
-      </ul>
-  </div>`;
+      <div class="paragraph">
+        On capable browsers, users will be prompted for installation of a PWA
+        if:
+        <ul>
+          <li>The web app is not already installed</li>
+          <li>Meets a user engagement heuristic</li>
+          <li>Be served over HTTPS</li>
+          <li>
+            Includes a Web App Manifest that includes:
+            <ul>
+              <li><code>short_name</code> or <code>name</code></li>
+              <li>
+                <code>icons</code> - must include a 192px and a 512px icon
+              </li>
+              <li><code>start_url</code></li>
+              <li>
+                <code>display</code> - must be one of <code>fullscreen</code>,
+                <code>standalone</code>, or <code>minimal-ui</code>
+              </li>
+              <li>
+                Note: <code>prefer_related_applications</code> must not be
+                present, or be <code>false</code>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            Registers a service worker with a functional <code>fetch</code>
+            handler.
+          </li>
+        </ul>
+      </div>
+      <div class="paragraph">
+        Let's take a look at the
+        <a href="./assets/manifest.json">manifest.json</a> file of this
+        application.
+      </div>
+      <div class="paragraph">
+        When those criterion are met, you get a very nice installation icon on
+        your desktop browser: <img src="./assets/install_desktop.png" />
+      </div>`;
   }
 }
+
+export { PWAInstallable };

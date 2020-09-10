@@ -1,5 +1,4 @@
 import {
-  LitElement,
   TemplateResult,
   css,
   customElement,
@@ -56,6 +55,10 @@ class PWAIntro extends SlideShowElement {
       <div class="paragraph">
         With PWA, you get the best of both worlds:<br />
         <img src="./assets/capabilities-reach.svg" style="width: 70%" />
+      </div>
+      <div class="paragraph bottom-nav">
+        <a href="./history" class="nav-link">A bit of history</a>
+        <a href="./installable" class="nav-link">Installable PWAs</a>
       </div>`;
   }
 }
