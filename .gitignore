@@ -26,3 +26,5 @@
 !.yarn/sdks
 !.yarn/versions
 .pnp.*
+
+*:Zone.Identifier

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <base href="/">
-
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons&display=block" rel="stylesheet">
   <style>
     html,
     body {
@@ -13,15 +13,21 @@
       padding: 0;
       font-family: sans-serif;
       background-color: #ededed;
+
+      --mdc-theme-primary: orange;
+      --mdc-theme-on-primary: black;
     }
   </style>
   <title>PWA Demo</title>
+  <script>
+    window.process = window.process || { env: { NODE_ENV: 'production' } };
+  </script>
 </head>
 
 <body>
   <pwa-demo></pwa-demo>
 
-  <script type="module" src="./out-tsc/src/pwa-demo.js"></script>
+  <script type="module" src="./out-tsc/src/components/pwa-demo.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,9 @@
 module.exports = {
   root: true,
+  env: {
+    browser: true,
+    node: false,
+  },
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint', 'import', 'html'],
   extends: [
@@ -15,6 +19,6 @@ module.exports = {
     '@typescript-eslint/no-non-null-assertion': 'off',
     'import/named': 'off',
     'import/no-unresolved': 'off',
-    'import/extensions': ['error', 'always', { ignorePackages: true }],
+    'import/extensions': 'off',
   },
 };
