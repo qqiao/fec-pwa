@@ -17,7 +17,7 @@ import { Drawer } from '@material/mwc-drawer'; // eslint-disable-line import/no-
 import { RootState, store } from '../store';
 
 import './PWAHistory';
-import { navigate } from '../actions/app';
+import { navigate, updateDrawerOpened } from '../actions/app';
 
 @customElement('pwa-demo')
 class PWADemo extends connect(store)(LitElement) {
@@ -56,9 +56,13 @@ class PWADemo extends connect(store)(LitElement) {
   private drawer?: Drawer;
 
   @property()
+  private _drawerOpened?: boolean;
+
+  @property()
   private _page?: string;
 
   public stateChanged(state: RootState): void {
+    this._drawerOpened = state.app?.drawerOpened;
     this._page = state.app?.page;
   }
 
@@ -69,7 +73,8 @@ class PWADemo extends connect(store)(LitElement) {
   }
 
   protected render(): TemplateResult {
-    return html` <mwc-drawer id="drawer" type="modal" hasHeader>
+    return html` <mwc-drawer id="drawer" type="modal" hasHeader
+      ?open="${this._drawerOpened}">
       <span slot="title">
         <img src="./assets/Progressive_Web_Apps_Logo.svg" id="pwaLogo">
       </span>
@@ -78,10 +83,11 @@ class PWADemo extends connect(store)(LitElement) {
         <li><a href="./intro">Introducing PWA</a></li>
         <li><a href="./installable">Installable</a></li>
         <li><a href="./upcoming">Upcoming Features</a></li>
-        <ol>
-          <li><a href="./upcoming-badging">Badging</a></li>
-          <li><a href="./upcoming-shortcuts">App Shortcuts</a></li>
-        </ol>
+          <ol>
+            <li><a href="./upcoming-badging">Badging</a></li>
+            <li><a href="./upcoming-shortcuts">App Shortcuts</a></li>
+          </ol>
+        <li><a href="./summary">Summary</a></li>
       </ol>
       <div slot="appContent">
         <mwc-top-app-bar>
@@ -89,8 +95,7 @@ class PWADemo extends connect(store)(LitElement) {
             icon="menu"
             slot="navigationIcon"
             @click="${() => {
-              if (!this.drawer) return;
-              this.drawer.open = !this.drawer.open;
+              store.dispatch(updateDrawerOpened(!this._drawerOpened));
             }}"
           ></mwc-icon-button>
           <div slot="title">PWA （FEC重磅推出，2020首次活动，国庆献礼不容错过）</div>
@@ -120,6 +125,9 @@ class PWADemo extends connect(store)(LitElement) {
           <pwa-upcoming-shortcuts class="page" ?active=${
             'upcoming-shortcuts' === this._page
           }></pwa-upcoming-shortcuts>
+          <pwa-summary class="page" ?active=${
+            'summary' === this._page
+          }></pwa-summary>
         <div>
       </div>
     </mwc-drawer>`;

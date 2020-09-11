@@ -15,6 +15,10 @@ class PWAUpcoming extends SlideShowElement {
           <li><a href="./upcoming-badging">Badging</a></li>
           <li><a href="./upcoming-shortcuts">App Shortcuts</a></li>
         </ul>
+      </div>
+      <div class="paragraph bottom-nav">
+        <a href="./installable" class="nav-link">Installable PWAs</a>
+        <a href="./summary" class="nav-link">Summary</a>
       </div>`;
   }
 }

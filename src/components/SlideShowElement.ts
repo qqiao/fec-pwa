@@ -23,7 +23,7 @@ const sharedStyles = css`
   }
 
   :host div.paragraph {
-    opacity: 1;
+    opacity: 0;
     margin: 1.5em 0;
   }
 

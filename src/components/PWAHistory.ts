@@ -69,6 +69,9 @@ class PWAHistory extends SlideShowElement {
         things (Citi Velocity), be a 杠精 (贴吧)...
       </div>
       <div class="paragraph">
+        <img src="./assets/gang.jpg" style="width: 300px">
+      </div>
+      <div class="paragraph">
         Then the browsers became our bottleneck... Fond memories of Internet
         Explorer anyone?
       </div>
