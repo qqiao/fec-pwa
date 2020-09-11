@@ -15,6 +15,8 @@ class PWAUpcomingShortcuts extends SlideShowElement {
       </div>
       <div class="paragraph">
         App shortcuts allows PWAs to do exactly that. And also on desktops.
+        <br />
+        <img src="./assets/shortcuts.jpg" />
       </div>`;
   }
 }
