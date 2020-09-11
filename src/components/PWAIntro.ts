@@ -1,22 +1,10 @@
-import {
-  TemplateResult,
-  css,
-  customElement,
-  html,
-} from 'lit-element';
+import { TemplateResult, css, customElement, html } from 'lit-element';
 
 import { sharedStyles, SlideShowElement } from './SlideShowElement';
 
 @customElement('pwa-intro')
 class PWAIntro extends SlideShowElement {
-  static styles = [
-    sharedStyles,
-    css`
-      :host {
-        display: block;
-      }
-    `,
-  ];
+  static styles = [sharedStyles];
   protected render(): TemplateResult {
     return html`<h2>Introducing PWA</h2>
       <div class="paragraph">

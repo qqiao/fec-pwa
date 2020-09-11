@@ -75,8 +75,12 @@ class PWADemo extends connect(store)(LitElement) {
       </span>
       <ol id="navigation-links">
         <li><a href="./history">History</a></li>
-        <li><a href="./intro">Introduction</a></li>
+        <li><a href="./intro">Introducing PWA</a></li>
         <li><a href="./installable">Installable</a></li>
+        <li><a href="./upcoming">Upcoming Features</a></li>
+        <ol>
+          <li><a href="./upcoming-badging">Badging</a></li>
+        </ol>
       </ol>
       <div slot="appContent">
         <mwc-top-app-bar>
@@ -106,6 +110,12 @@ class PWADemo extends connect(store)(LitElement) {
           <pwa-installable class="page" ?active=${
             'installable' === this._page
           }></pwa-installable>
+          <pwa-upcoming class="page" ?active=${
+            'upcoming' === this._page
+          }></pwa-upcoming>
+          <pwa-upcoming-badging class="page" ?active=${
+            'upcoming-badging' === this._page
+          }></pwa-upcoming-badging>
         <div>
       </div>
     </mwc-drawer>`;

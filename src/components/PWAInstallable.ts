@@ -3,7 +3,7 @@ import { sharedStyles, SlideShowElement } from './SlideShowElement';
 
 @customElement('pwa-installable')
 class PWAInstallable extends SlideShowElement {
-  static styles = [sharedStyles, css``];
+  static styles = [sharedStyles];
 
   protected render(): TemplateResult {
     return html`<h2>Installable PWAs</h2>
@@ -47,6 +47,19 @@ class PWAInstallable extends SlideShowElement {
       <div class="paragraph">
         When those criterion are met, you get a very nice installation icon on
         your desktop browser: <img src="./assets/install_desktop.png" />
+      </div>
+      <div class="paragraph">
+        Once installed, they appear on your desktop just like any other
+        application <br /><img src="./assets/installed_desktop.png" />
+      </div>
+      <div class="paragraph">
+        For mobile, the story is very similar, if not smoother:<br />
+        <img src="./assets/install_mobile.jpg" />
+        <img src="./assets/installed_mobile.jpg" />
+      </div>
+      <div class="paragraph bottom-nav">
+        <a href="./intro" class="nav-link">Introducing PWA</a>
+        <a href="./upcoming" class="nav-link">Upcoming features</a>
       </div>`;
   }
 }

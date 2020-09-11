@@ -4,14 +4,7 @@ import { SlideShowElement, sharedStyles } from './SlideShowElement';
 
 @customElement('pwa-history')
 class PWAHistory extends SlideShowElement {
-  static styles = [
-    sharedStyles,
-    css`
-      :host {
-        display: block;
-      }
-    `,
-  ];
+  static styles = [sharedStyles];
 
   protected render(): TemplateResult {
     return html`<h2>A bit of history</h2>

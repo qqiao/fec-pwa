@@ -64,6 +64,7 @@
   "author": "pwa-demo",
   "license": "MIT",
   "dependencies": {
+    "@material/mwc-button": "^0.18.0",
     "@material/mwc-drawer": "^0.18.0",
     "@material/mwc-icon-button": "^0.18.0",
     "@material/mwc-top-app-bar": "^0.18.0",

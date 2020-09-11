@@ -1341,6 +1341,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@material/mwc-button@npm:^0.18.0":
+  version: 0.18.0
+  resolution: "@material/mwc-button@npm:0.18.0"
+  dependencies:
+    "@material/mwc-icon": ^0.18.0
+    "@material/mwc-ripple": ^0.18.0
+    lit-element: ^2.3.0
+    lit-html: ^1.1.2
+    tslib: ^1.10.0
+  checksum: 62ad3744202b9d765ab7d278f2f0601cced5ca8ddf2858f8f0fa36c96408dc19002ee63351dd3dccd2d5ac1164cdbf361db1a917846632cca5b463c8b77014e1
+  languageName: node
+  linkType: hard
+
 "@material/mwc-drawer@npm:^0.18.0":
   version: 0.18.0
   resolution: "@material/mwc-drawer@npm:0.18.0"
@@ -1364,6 +1377,16 @@ __metadata:
     lit-element: ^2.3.0
     tslib: ^1.10.0
   checksum: 6776dcc085802f5e4a2c4b4fe4ce8d5558e751d6ecf2efbc9151f70411ed233a8331b5a784d743d3a2d6a2dc43517ee3a50b95ef4d9523e8b57bd848a9a50e6e
+  languageName: node
+  linkType: hard
+
+"@material/mwc-icon@npm:^0.18.0":
+  version: 0.18.0
+  resolution: "@material/mwc-icon@npm:0.18.0"
+  dependencies:
+    lit-element: ^2.3.0
+    tslib: ^1.10.0
+  checksum: efe58303fe2bae491e81d710bf13a66e1049e259f17387021fd002703ea5c715fa1009598731bd67696699be85f89a381f6d727725483dca38598ae36e91ce08
   languageName: node
   linkType: hard
 
@@ -6296,6 +6319,7 @@ fsevents@~2.1.2:
   dependencies:
     "@babel/plugin-syntax-dynamic-import": ^7.8.3
     "@babel/plugin-transform-modules-systemjs": ^7.10.5
+    "@material/mwc-button": ^0.18.0
     "@material/mwc-drawer": ^0.18.0
     "@material/mwc-icon-button": ^0.18.0
     "@material/mwc-top-app-bar": ^0.18.0

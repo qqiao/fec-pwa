@@ -18,8 +18,12 @@ abstract class SlideShowElement extends LitElement {
 }
 
 const sharedStyles = css`
+  :host {
+    display: block;
+  }
+
   :host div.paragraph {
-    opacity: 0;
+    opacity: 1;
     margin: 1.5em 0;
   }
 

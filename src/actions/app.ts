@@ -38,6 +38,12 @@ const loadPage: ActionCreator<ThunkResult> = (page: string) => dispatch => {
     case 'installable':
       import('../components/pwa-installable');
       break;
+    case 'upcoming':
+      import('../components/pwa-upcoming');
+      break;
+    case 'upcoming-badging':
+      import('../components/pwa-upcoming-badging');
+      break;
   }
   dispatch(updatePage(page));
 };
