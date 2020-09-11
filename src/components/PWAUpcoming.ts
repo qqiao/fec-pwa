@@ -13,7 +13,7 @@ class PWAUpcoming extends SlideShowElement {
         browser vendors:
         <ul>
           <li><a href="./upcoming-badging">Badging</a></li>
-          <li>App Shortcuts</li>
+          <li><a href="./upcoming-shortcuts">App Shortcuts</a></li>
         </ul>
       </div>`;
   }

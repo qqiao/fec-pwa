@@ -44,6 +44,9 @@ const loadPage: ActionCreator<ThunkResult> = (page: string) => dispatch => {
     case 'upcoming-badging':
       import('../components/pwa-upcoming-badging');
       break;
+    case 'upcoming-shortcuts':
+      import('../components/pwa-upcoming-shortcuts');
+      break;
   }
   dispatch(updatePage(page));
 };

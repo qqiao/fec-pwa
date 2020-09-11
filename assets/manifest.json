@@ -48,5 +48,15 @@
       "sizes": "512x512",
       "type": "image/png"
     }
+  ],
+  "shortcuts": [
+    {
+      "name": "History",
+      "url": "/history"
+    },
+    {
+      "name": "Upcoming Features",
+      "url": "/upcoming"
+    }
   ]
 }

@@ -11,7 +11,10 @@ class PWAUpcomingBadging extends SlideShowElement {
 
   protected render(): TemplateResult {
     return html`<h2>Badging API</h2>
-      <div class="paragraph">Badging API allows applications</div>
+      <div class="paragraph">
+        Badging API allows applications to show a badge count as a subtle way to
+        notify the user that there's activity going on within the application.
+      </div>
       <div class="paragraph">
         <mwc-button
           @click="${async () => {

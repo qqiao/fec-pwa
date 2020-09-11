@@ -80,6 +80,7 @@ class PWADemo extends connect(store)(LitElement) {
         <li><a href="./upcoming">Upcoming Features</a></li>
         <ol>
           <li><a href="./upcoming-badging">Badging</a></li>
+          <li><a href="./upcoming-shortcuts">App Shortcuts</a></li>
         </ol>
       </ol>
       <div slot="appContent">
@@ -116,6 +117,9 @@ class PWADemo extends connect(store)(LitElement) {
           <pwa-upcoming-badging class="page" ?active=${
             'upcoming-badging' === this._page
           }></pwa-upcoming-badging>
+          <pwa-upcoming-shortcuts class="page" ?active=${
+            'upcoming-shortcuts' === this._page
+          }></pwa-upcoming-shortcuts>
         <div>
       </div>
     </mwc-drawer>`;
